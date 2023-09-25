@@ -2,18 +2,18 @@
 
 echo "[LOGGING] Installing required packages..."
 
-pacman -S go gc guile make yay rustup
+sudo pacman -Sy go gc guile make yay rustup glibc kitty ssdm
 
 rustup install stable
 rustup install nightly
 
 echo "[LOGGING] Installing environment"
 
-yay -S hyprland swww eww dhcpcd linux-firmware ffmpeg
+sudo yay -Sy hyprland swww eww dhcpcd linux-firmware ffmpeg
 
 echo "[LOGGING] Installing apps"
 
-yay -S code libreoffice-still figma-linux bitwarden gimp
+sudo yay -Sy code libreoffice-still figma-linux bitwarden gimp
 
 echo "[LOGGING] Finishing touches..."
 
