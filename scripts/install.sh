@@ -2,18 +2,19 @@
 
 echo "[LOGGING] Installing required packages..."
 
-sudo pacman -Sy go gc guile make yay rustup glibc kitty ssdm
+sudo pacman -S go gc guile make yay rustup glibc kitty ssdm
+sudo pacman -S patch libva-vdpau-driver-wayland libva-vdpau-driver-wayland libva-intel-driver
 
 rustup install stable
 rustup install nightly
 
 echo "[LOGGING] Installing environment"
 
-sudo yay -Sy hyprland swww eww dhcpcd linux-firmware ffmpeg
+sudo yay -S hyprland swww eww dhcpcd linux-firmware ffmpeg
 
 echo "[LOGGING] Installing apps"
 
-sudo yay -Sy code libreoffice-still figma-linux bitwarden gimp
+sudo yay -S code libreoffice-still figma-linux bitwarden gimp gnome-shell-extensions gnome-tweak-tool
 
 echo "[LOGGING] Finishing touches..."
 
