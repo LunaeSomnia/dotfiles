@@ -18,5 +18,7 @@ sudo yay -S code libreoffice-still figma-linux bitwarden gimp nwg-look
 
 echo "[LOGGING] Finishing touches..."
 
+sudo rm -rf /opt/figma-linux/libm.so.6
+
 echo "[LOGGING] Done!"
 
