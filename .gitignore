@@ -1,0 +1,14 @@
+*
+!.gitignore
+!init.sh
+
+!.config
+
+!.config/hypr
+!.config/hypr/**/*
+
+!.config/kitty
+!.config/kitty/**/*
+
+!.config/ags
+!.config/ags/**/*
