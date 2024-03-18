@@ -18,7 +18,7 @@ sudo cp ~/dotfiles/pacman.conf /etc/
 yay
 
 # Installing widgets and utils
-yay -S xdg-desktop-portal-hyprland polkit-kde-agent qt5-wayland qt6-wayland gnome gnome-extra gnome-control-center adw-gtk3 hyprshot swayosd-git swaync anyrun-git wireplumber pavucontrol aylurs-gtk-shell ttf-jetbrains-mono htop gvfs sassc rustup
+yay -S xdg-desktop-portal-hyprland polkit-kde-agent qt5-wayland qt6-wayland gnome gnome-extra gnome-control-center adw-gtk3 hyprshot swayosd-git swaync anyrun-git wireplumber pavucontrol aylurs-gtk-shell ttf-jetbrains-mono htop gvfs sassc rustup direnv
 
 sudo systemctl enable --now swayosd-libinput-backend
 
