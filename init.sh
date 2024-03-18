@@ -1,3 +1,4 @@
+#!/bin/bash
 
 # Required packages
 sudo pacman -S hyprland kitty sddm 
@@ -10,11 +11,11 @@ git clone https://aur.archlinux.org/yay.git
 cd yay; makepkg -si
 rm -rf yay
 
-yay
-
 # Enable multilib
 sudo rm /etc/pacman.conf
 sudo cp ~/dotfiles/pacman.conf /etc/
+
+yay
 
 # Installing widgets and utils
 yay -S xdg-desktop-portal-hyprland polkit-kde-agent qt5-wayland qt6-wayland gnome gnome-extra gnome-control-center adw-gtk3 hyprshot swayosd-git swaync anyrun-git wireplumber pavucontrol aylurs-gtk-shell ttf-jetbrains-mono htop gvfs sassc rustup
