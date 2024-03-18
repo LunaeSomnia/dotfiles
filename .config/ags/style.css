@@ -5,7 +5,10 @@
     margin-right: 8px;
     margin-top: 8px;
     border-radius: 8px;
+}
 
+.window-box.right {
+    padding-left: 8px;
 }
 
 button {

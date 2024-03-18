@@ -148,7 +148,7 @@ const Center = () => Widget.Box({
 });
 
 const Right = () => Widget.Box({
-    class_name: "window-box",
+    class_name: "window-box right",
     hpack: 'end',
     spacing: 8,
     children: [
