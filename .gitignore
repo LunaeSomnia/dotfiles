@@ -1,6 +1,7 @@
 *
 !.gitignore
 !init.sh
+!pacman.conf
 
 !.config
 
