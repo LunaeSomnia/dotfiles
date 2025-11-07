@@ -1,0 +1,25 @@
+# https://dunst-project.org/documentation
+[global]
+monitor = 1
+font = "Ubuntu 12"
+frame_color = "#1e66f5"
+separator_color= frame
+highlight = "#1034E9"
+padding = 16
+horizontal_padding = 20
+origin = top-right
+offset = (8, 8)
+corner_radius = 8
+
+[urgency_low]
+background = "#151312"
+foreground = "#FAF1EB"
+
+[urgency_normal]
+background = "#151312"
+foreground = "#FAF1EB"
+
+[urgency_critical]
+background = "#151312"
+foreground = "#FAF1EB"
+frame_color = "#FF3A3A"

@@ -1,0 +1,142 @@
+* {
+    font-family: "Agave";
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0;
+    padding: 0;
+    transition-property: background-color;
+    transition-duration: 0.5s;
+}
+
+/* Reset all styles */
+* {
+    border: none;
+    min-height: 0;
+    margin: 0;
+    padding: 0;
+    border-radius: 0px;
+}
+
+/* The whole bar */
+#waybar {
+    background-color: transparent;
+    color: #faf1eb;
+    transition-property: background-color;
+    transition-duration: 0.5s;
+}
+
+window#waybar.hidden {
+    opacity: 0.2;
+}
+
+#workspaces button {
+    padding: 0px;
+    min-width: 24px;
+    color: #c5b0a2;
+    background-color: #151312;
+    transition: all 0.3s ease-in-out;
+    font-size: 13px; /* Slightly smaller font size */
+}
+
+#workspaces button.active {
+    color: @foreground;
+    background-color: #1e66f5;
+}
+
+#workspaces button:hover {
+    background-color: #333333;
+}
+
+#workspaces button.urgent {
+    background-color: #eb4d4b;
+}
+
+#workspaces {
+    background-color: #151312;
+    padding: 8px; /* Adjusted padding to reduce height */
+}
+
+#window {
+    background-color: #151312;
+    font-size: 15px; /* Slightly smaller font size */
+    font-weight: 800;
+    color: @foreground;
+    padding: 3px 6px; /* Reduced padding */
+    margin: 2px;
+    opacity: 1;
+}
+
+#clock {
+    background-color: #151312;
+    padding: 8px 12px;
+}
+
+#wireplumber {
+    background-color: #151312;
+    padding: 8px 12px;
+}
+
+#custom-screenshot_t {
+    background-color: #151312;
+    padding: 12px;
+    padding-right: 4px;
+}
+
+#custom-spotify {
+    background-color: #151312;
+    padding: 3px 12px;
+}
+
+#tray {
+    background-color: transparent;
+    padding: 6px;
+}
+
+#tray > .active {
+    background-color: #151312;
+}
+
+#cpu {
+    color: #fb958b;
+    background-color: #151312;
+    padding: 8px 12px;
+}
+
+#memory {
+    color: #ebcb8b;
+    background-color: #151312;
+    padding: 8px 12px;
+}
+
+#custom-power {
+    background-color: #151312;
+    min-width: 32px;
+    padding-right: 4px;
+    font-size: 20px;
+}
+
+/* If workspaces is the leftmost module, omit left margin */
+.modules-left > widget:first-child > #workspaces {
+    margin-left: 0;
+}
+
+/* If workspaces is the rightmost module, omit right margin */
+.modules-right > widget:last-child > #workspaces {
+    margin-right: 0;
+}
+
+@keyframes blink {
+    to {
+        background-color: rgba(30, 34, 42, 0.5);
+        color: #abb2bf;
+    }
+}
+
+#tray > .passive {
+    -gtk-icon-effect: dim;
+}
+
+#tray > .needs-attention {
+    -gtk-icon-effect: highlight;
+    background-color: #eb4d4b;
+}
