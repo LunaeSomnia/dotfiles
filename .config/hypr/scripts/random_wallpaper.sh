@@ -19,5 +19,4 @@ hyprctl hyprpaper preload "$WALLPAPER"
 # Apply the selected wallpaper to each monitor
 for MONITOR in $MONITORS; do
     hyprctl hyprpaper wallpaper "$MONITOR,$WALLPAPER"
-    sleep 0.2
 done
